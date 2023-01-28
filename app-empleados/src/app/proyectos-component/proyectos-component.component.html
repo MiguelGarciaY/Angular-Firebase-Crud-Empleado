@@ -1,0 +1,27 @@
+<p>proyectos-component works!</p>
+
+<form>
+    <div>
+      <label>Nombre</label>
+      <input type="text" #nombre>
+    </div>
+    <div>
+      <label>Apellido</label>
+      <input type="text" #apellido>
+    </div>
+    <div>
+      <label>Cargo</label>
+      <input type="text" #cargo>
+    </div>
+    <div>
+      <label>Salario</label>
+      <input type="text" #salario>
+    </div>
+    <div>
+      <button type="submit" id="botonregistrar" (click)="registrar(nombre.value, apellido.value, cargo.value, salario.value)">Registrar</button>
+    </div>
+  </form>
+
+<div style="text-align: center;">
+  <button class="btn btn-primary" (click)="volverHome()">Regresar</button>
+</div>

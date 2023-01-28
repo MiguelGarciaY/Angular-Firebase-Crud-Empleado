@@ -1,0 +1,23 @@
+<p>actualice-component works!</p>
+<form>
+    <div class="form-group col-md-3">
+      <label for="nombre">Nombre</label>
+      <input type="text" #nombre name="nombre" id="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="cuadroNombre" >
+    </div>
+    <div class="form-group col-md-3">
+      <label>Apellido</label>
+      <input type="text" #apellido value={{cuadroApellido}} class="form-control">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Cargo</label>
+      <input type="text" #cargo value={{cuadroCargo}} class="form-control">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Salario</label>
+      <input type="text" #salario value={{cuadroSalario}} class="form-control">
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary" id="botonregistrar" (click)="actualizaEmpleado(nombre.value, apellido.value, cargo.value, salario.value)" style="margin-left: 15px; margin-right: 50px;">Guardar</button>
+      <!--<button type="submit" class="btn btn-primary" id="botonEliminar" (click)="eliminarEmpleado()">Eliminar</button>-->
+    </div>
+  </form>

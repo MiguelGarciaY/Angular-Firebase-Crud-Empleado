@@ -15,6 +15,7 @@ import { ActualiceComponentComponent } from './actualice-component/actualice-com
 import { ErrorPersonalizadoComponent } from './error-personalizado/error-personalizado.component';
 import { DataServices } from './data.services';
 import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes:Routes=[
  {path:'',component:HomeComponentComponent},
@@ -34,7 +35,8 @@ const appRoutes:Routes=[
     ProyectosComponentComponent,
     QuienesComponentComponent,
     ContactoComponentComponent,
-    ActualiceComponentComponent
+    ActualiceComponentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

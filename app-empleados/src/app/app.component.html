@@ -18,6 +18,8 @@
         <li><a href="/contacto">Contacto</a></li>
         <li><a href="/actualizar">Actualizar</a></li>
         <li><a href="/prueba">Prueba</a></li>
+        <li style="margin-left: 1000px;" *ngIf="!estaLogueado()"><a routerLink="/login">Login</a></li>
+        <li style="margin-left: 1000px;" *ngIf="estaLogueado()"><a (click)="logout()">Logout</a></li>
       </ul>
     
   </nav>
